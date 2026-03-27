@@ -10,7 +10,7 @@ public class Data {
 
     public static void data() {
         try (Scanner input = new Scanner(System.in)) {
-            System.out.println("Escreva seu pais para ver a data de hoje: ");
+            System.out.println("Escreva seu País para ver a data de hoje: ");
             String pais = input.nextLine();
 
             Locale br = new Locale("pt", "BR");
@@ -26,16 +26,16 @@ public class Data {
             DateFormat it = DateFormat.getDateInstance(DateFormat.FULL, ita);
 
             switch (pais.toLowerCase()) {
-                case "brasil":
+                case "Brasil":
                     System.out.println("Data no formato BR: " + pt.format(calendario.getTime()));
                     break;
-                case "estados unidos":
+                case "Estados Unidos":
                     System.out.println("Data no formato US: " + us.format(calendario.getTime()));
                     break;
-                case "chile":
+                case "Chile":
                     System.out.println("Data no formato CHL: " + cl.format(calendario.getTime()));
                     break;
-                case "italia":
+                case "Italia":
                     System.out.println("Data no formato ITA: " + it.format(calendario.getTime()));
                     break;
 
